@@ -10,19 +10,15 @@
 <body style="background: linear-gradient(#f3d4dc, #b18eee) no-repeat center center fixed">
   <div class="container">
     <div class="row text-center justify-content-center">
-      <!-- <div class="col-md-6"> -->
-        <div>
-          <h1>Should we make some bad decisions this weekend?</h1>
-          <h5>(random advice from those who know)</h5></br>
-          <button id="myButton" type="button" class="btn btn-primary btn-lg">Click For Your Answer</button>
-          <p></br></p>
-          <p id="result">
-            <img
-              src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fblog.chron.com%2Ftubular%2Ffiles%2F2015%2F09%2Fcrystal-ball-see-the-future.gif&f=1&nofb=1"
-              alt="Crystal Ball">
-          </p>
-        </div>
-      <!-- </div> -->
+      <div class="col-auto">
+        <h1>Should we make some bad decisions this weekend?</h1>
+        <h5>(random advice from those who know)</h5></br>
+        <button id="myButton" type="button" class="btn btn-primary btn-lg">Click For Your Answer</button>
+        <p></br></p>
+        <p id="result">
+          <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fblog.chron.com%2Ftubular%2Ffiles%2F2015%2F09%2Fcrystal-ball-see-the-future.gif&f=1&nofb=1" class="img-fluid" alt="Crystal Ball">
+        </p>
+      </div>
     </div>
   </div>
 
@@ -30,16 +26,16 @@
 // Activity: Make a random output generator based on an array:
 
 // Possible outputs (gifs): 
-    let gif1 = '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2F2a072a22d2996d9b01f632e413b7bb44%2Ftenor.gif%3Fitemid%3D5106324&f=1&nofb=1" alt="Yes indeed">'
-    let gif2 = '<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.reactiongifs.us%2Fwp-content%2Fuploads%2F2013%2F05%2Fshaking_head_disgust_keanu_reeves.gif&f=1&nofb=1" alt="Just stop">'
-    let gif3 = '<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.reactiongifs.com%2Fr%2Fkbs.gif&f=1&nofb=1" alt="Boy howdy">'
-    let gif4 = '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F12ClTeBg4yvkiI%2F200.gif&f=1&nofb=1" alt="Not today">'
-    let gif5 = '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F114IumHhV6sTRK%2Fgiphy.gif&f=1&nofb=1" alt="Hey presto">'
-    let gif6 = '<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgifrific.com%2Fwp-content%2Fuploads%2F2012%2F09%2FKanye-West-Shaking-Head-No.gif&f=1&nofb=1" alt="No chance, pal">'
-    let gif7 = '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F51msWHqr8drws%2Fgiphy.gif&f=1&nofb=1" alt="Good day">'
-    let gif8 = '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.co%2Fimages%2Ff714df3f88139540381b47f40177d05a%2Fraw&f=1&nofb=1" alt="Please do not">'
-    let gif9 = '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FDsLlSc1PzOKbu%2F200.gif&f=1&nofb=1" alt="Ay ay, capin">'
-    let gif10 = '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2Fkf6HJDE0XAkvu%2Fgiphy.gif&f=1&nofb=1" alt="I SAID NO">'
+    let gif1 = '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2F2a072a22d2996d9b01f632e413b7bb44%2Ftenor.gif%3Fitemid%3D5106324&f=1&nofb=1" class="img-fluid" alt="Yes indeed">'
+    let gif2 = '<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.reactiongifs.us%2Fwp-content%2Fuploads%2F2013%2F05%2Fshaking_head_disgust_keanu_reeves.gif&f=1&nofb=1" class="img-fluid" alt="Just stop">'
+    let gif3 = '<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.reactiongifs.com%2Fr%2Fkbs.gif&f=1&nofb=1" class="img-fluid" alt="Boy howdy">'
+    let gif4 = '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F12ClTeBg4yvkiI%2F200.gif&f=1&nofb=1" class="img-fluid" alt="Not today">'
+    let gif5 = '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F114IumHhV6sTRK%2Fgiphy.gif&f=1&nofb=1" class="img-fluid" alt="Hey presto">'
+    let gif6 = '<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgifrific.com%2Fwp-content%2Fuploads%2F2012%2F09%2FKanye-West-Shaking-Head-No.gif&f=1&nofb=1" class="img-fluid" alt="No chance, pal">'
+    let gif7 = '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F51msWHqr8drws%2Fgiphy.gif&f=1&nofb=1" class="img-fluid" alt="Good day">'
+    let gif8 = '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.tenor.co%2Fimages%2Ff714df3f88139540381b47f40177d05a%2Fraw&f=1&nofb=1" class="img-fluid" alt="Please do not">'
+    let gif9 = '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FDsLlSc1PzOKbu%2F200.gif&f=1&nofb=1" class="img-fluid" alt="Ay ay, capin">'
+    let gif10 = '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2Fkf6HJDE0XAkvu%2Fgiphy.gif&f=1&nofb=1" class="img-fluid" alt="I SAID NO">'
 
 // Make an array of the possible outputs from the list above:    
     let gifList = [gif1, gif2, gif3, gif4, gif5, gif6, gif7, gif8, gif9, gif10];
